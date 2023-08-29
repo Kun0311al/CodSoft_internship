@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-
+    system("cls");
 	cout << "\n\t\t\tWelcome to GuessTheNumber game!"
 		<< endl;
 	cout << "You have to guess a number between 1 and 100. "
