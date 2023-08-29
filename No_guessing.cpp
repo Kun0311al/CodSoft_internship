@@ -100,57 +100,37 @@ int main()
 				}
 			}
 		}
-        
+
 		// Difficulty level : Medium
 		else if (difficultyLevel == 3) {
-			cout << "\nYou have 5 choices for finding the "
-					"secret number between 1 and 100.";
+			cout << "\nYou have 5 choices for finding the secret number between 1 and 100.";
 			int choicesLeft = 5;
 			for (int i = 1; i <= 5; i++) {
 
-				// prompting the player to guess the secret
-				// number
+				// prompting the player to guess the secret number
 				cout << "\n\nEnter the number: ";
 				cin >> playerChoice;
 
-				// determining if the playerChoice matches
-				// the secret number
+				// determining if the playerChoice matches the secret number
 				if (playerChoice == secretNumber) {
-					cout << "Well played! You won, "
-						<< playerChoice
-						<< " is the secret number" << endl;
-					cout << "\t\t\t Thanks for playing...."
-						<< endl;
-					cout << "Play the game again with "
-							"us!!\n\n"
-						<< endl;
+					cout << "Well played! You won, "<< playerChoice<< " is the secret number" << endl;
+					cout << "\t\t\t Thanks for playing...."<< endl;
+					cout << "Play the game again with us!!\n\n"<< endl;
 					break;
 				}
 				else {
-					cout << "Nope, " << playerChoice
-						<< " is not the right number\n";
+					cout << "Nope, " << playerChoice<< " is not the right number\n";
 					if (playerChoice > secretNumber) {
-						cout << "The secret number is "
-								"smaller than the number "
-								"you have chosen"
-							<< endl;
+						cout << "The secret number is smaller than the number you have chosen"<< endl;
 					}
 					else {
-						cout << "The secret number is "
-								"greater than the number "
-								"you have chosen"
-							<< endl;
+						cout << "The secret number is greater than the number you have chosen"<< endl;
 					}
 					choicesLeft--;
-					cout << choicesLeft << " choices left. "
-						<< endl;
+					cout << choicesLeft << " choices left. "<< endl;
 					if (choicesLeft == 0) {
-						cout << "You couldn't find the "
-								"secret number, it was "
-							<< secretNumber
-							<< ", You lose!!\n\n";
-						cout << "Play the game again to "
-								"win!!!\n\n";
+						cout << "You couldn't find the secret number, it was "<< secretNumber<< ", You lose!!\n\n";
+						cout << "Play the game again to win!!!\n\n";
 					}
 				}
 			}
@@ -160,9 +140,7 @@ int main()
 			exit(0);
 		}
 		else {
-			cout << "Wrong choice, Enter valid choice to "
-					"play the game! (0,1,2,3)"
-				<< endl;
+			cout << "Wrong choice, Enter valid choice to play the game! (0,1,2,3)"<< endl;
 		}
 	}
 	return 0;
